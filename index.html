@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>My First Bootstrap Page</title>
+    <title>Inicio - Pádel UPM</title>
     <meta charset="utf-8">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/sticky-footer.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
-<nav class="navbar fixed-top navbar-expand-sm bg-transparent navbar-dark">
+<nav class="navbar navbar-dark bg-transparent fixed-top navbar-expand-sm">
     <!-- Brand -->
     <a class="navbar-brand" href="#">
         <img alt="" class="d-inline-block align-top" height="30" src="img/brand_upm.png" width="30">
@@ -43,20 +45,21 @@
     </ul>
 </nav>
 
-<div class="jumbotron text-center text-light">
+<header class="jumbotron text-center text-light">
     <div class="overlay"></div>
     <div class="inner">
         <h1>Pádel UPM</h1>
         <p>El club universitario más dinánico del circuito</p>
+        <a href="#" class="button my-3">Reservar pista</a>
     </div>
-</div>
+</header>
 
 <div class="container">
     <div class="row">
         <div class="col-sm-4">
-            <div class="shadow p-4">
+            <div class="custom-card shadow p-4">
                 <img alt="" class="mx-auto d-block" height="96" src="img/tennis.svg" width="96">
-                <h3 class="text-center">Clases</h3>
+                <h3 class="text-center my-3">Clases</h3>
                 <p class="text-justify">El conjunto de monitores más cualificados se encargará de darte la formación en
                     cuanto a técnica requerida en este deporte. Las clases prácticas te permitirán interiorizar los
                     movimientos adecuados como si fuesen naturales.<br>Las clases colectivas convierten las clases en un
@@ -64,9 +67,9 @@
             </div>
         </div>
         <div class="col-sm-4">
-            <div class="shadow p-4">
+            <div class="custom-card shadow p-4">
                 <img alt="" class="mx-auto d-block" height="96" src="img/coach.svg" width="96">
-                <h3 class="text-center">Entrenamientos personalizados</h3>
+                <h3 class="text-center my-3">Entrenamientos personalizados</h3>
                 <p class="text-justify">Si te sientes un campeón, de verdad lo eres o simplemente quieres avanzar
                     rápidamente en la técnica que rodea a este deporte te podemos configurar sesiones de entrenamiento a
                     tu medida con un entrenador personal que se encargará de:</p>
@@ -79,9 +82,9 @@
             </div>
         </div>
         <div class="col-sm-4">
-            <div class="shadow p-4">
+            <div class="custom-card shadow p-4">
                 <img alt="" class="mx-auto d-block" height="96" src="img/trophy.svg" width="96">
-                <h3 class="text-center">Campeonatos</h3>
+                <h3 class="text-center my-3">Campeonatos</h3>
                 <p class="text-justify">El club organiza campeonatos periódicos en los que te puedes divertir al mismo
                     tiempo que mejoras en el deporte. Tenemos campeonatos de un día, de fin de semana y ligas regulares.
                     Puedes participar en los torneos masculinos, femeninos y mixtos.</p>
@@ -89,5 +92,11 @@
         </div>
     </div>
 </div>
+
+<footer class="footer">
+    <div class="container text-center">
+        <span class="text-muted">Copyright © 2019 Luis Miguel Ortiz Rozalén. All Rights Reserved.</span>
+    </div>
+</footer>
 </body>
 </html>

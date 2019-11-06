@@ -1,5 +1,24 @@
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato'),
+    local('Lato-Regular'),
+    url('fonts/Lato-Regular.ttf');
+}
+
+body {
+    font-family: Lato, sans-serif;
+    background-color: whitesmoke;
+}
+
+.navbar {
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -o-transition: all 0.75s ease;
+    transition: all 0.75s ease;
+}
+
 .jumbotron {
-    height: 350px;
+    height: 450px;
     position: relative;
     background: url("../img/jumbotron_bg.jpg");
     background-size: cover;
@@ -22,4 +41,28 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
+}
+
+.inner > .button {
+    display:inline-block;
+    padding:0.5em 3em;
+    border:0.16em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-weight:400;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.15s;
+}
+
+.inner > .button:hover {
+    color:#DDDDDD;
+    border-color:#DDDDDD;
+}
+
+.custom-card {
+    height: 100%;
+    background-color: white;
 }
