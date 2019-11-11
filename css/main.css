@@ -1,3 +1,7 @@
+header > div > img {
+    height: 144px;
+}
+
 .jumbotron {
     height: 450px;
     position: relative;
@@ -42,4 +46,25 @@
 .inner > .button:hover {
     color: #DDDDDD;
     border-color: #DDDDDD;
+}
+
+.custom-card div.collapse:not(.show) {
+    height: 148px !important;
+    overflow: hidden;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.custom-card div.collapsing {
+    min-height: 42px !important;
+}
+
+.custom-card a.collapsed:after {
+    content: 'Leer más +';
+}
+
+.custom-card a:not(.collapsed):after {
+    content: 'Leer menos -';
 }
