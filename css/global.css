@@ -38,6 +38,10 @@ a:hover {
     }
 }
 
+#aLogout {
+    cursor: pointer;
+}
+
 .custom-card {
     height: 100%;
     background-color: white;

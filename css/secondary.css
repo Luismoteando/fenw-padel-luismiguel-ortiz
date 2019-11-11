@@ -70,3 +70,11 @@ html {
     box-shadow: none !important;
     outline: 0px !important;
 }
+
+.div_warning {
+    height: 30px;
+    width: 100%;
+    color: whitesmoke;
+    font-size: 15px;
+    text-align: center;
+}

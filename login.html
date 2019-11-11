@@ -10,50 +10,12 @@
     <link href="fontawesome/css/all.css" rel="stylesheet">
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/secondary.js"></script>
     <script src="js/global.js"></script>
+    <script src="js/login.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-md">
-    <!-- Brand -->
-    <a class="navbar-brand" href="index.html">
-        <img alt="" class="d-inline-block align-top" height="30" src="img/brand_upm.png" width="30">
-        Pádel UPM
-    </a>
-
-    <!-- Toggler/collapsibe Button -->
-    <button class="navbar-toggler" data-target=".navbar-collapse" data-toggle="collapse" type="button">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse">
-        <!-- Left Links -->
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="services.html">Servicios</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="installations.html">Instalaciones</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="reservations.html">Reservas</a>
-            </li>
-        </ul>
-
-        <!-- Right Links -->
-        <ul class="navbar-nav ml-auto">
-            <li class="divider" role="separator"></li>
-            <li class="nav-item">
-                <a class="nav-link" href="signin.html">Regístrate</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Iniciar sesión</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+<div id="secondary-navbar"></div>
 
 <div class="container h-100">
     <div class="d-flex justify-content-center h-100">
@@ -69,17 +31,20 @@
                         <div class="input-group-append">
                             <span class="input-group-text"><i class="fas fa-user"></i></span>
                         </div>
-                        <input class="form-control input_user" name="" placeholder="Usuario" type="text" value="">
+                        <input class="form-control input_user" id="user" name="" placeholder="Usuario" type="text"
+                               value="">
                     </div>
-                    <div class="input-group mb-2">
+                    <div class="input-group mb-3">
                         <div class="input-group-append">
                             <span class="input-group-text"><i class="fas fa-key"></i></span>
                         </div>
-                        <input class="form-control input_pass" name="" placeholder="Contraseña" type="password"
+                        <input class="form-control input_pass" id="password" name="" placeholder="Contraseña"
+                               type="password"
                                value="">
                     </div>
-                    <div class="d-flex justify-content-center mt-5 login_container">
-                        <button class="btn login_btn" name="button" type="button">Iniciar sesión</button>
+                    <div class="div_warning" id="warning"></div>
+                    <div class="d-flex justify-content-center mt-3 login_container">
+                        <button class="btn login_btn" id="login" name="button" type="button">Iniciar sesión</button>
                     </div>
                 </form>
             </div>
