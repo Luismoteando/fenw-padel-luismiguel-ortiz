@@ -1,6 +1,6 @@
 var liSignin, liLogin, liLogout;
 
-$(document).ready(function () {
+$().ready(function () {
     createSigninElement();
     createLoginElement();
     createLogoutElement();
@@ -11,37 +11,24 @@ $(document).ready(function () {
 });
 
 function createSigninElement() {
-    let aSignin = document.createElement("a");
-    liSignin = document.createElement("li");
-    liSignin.setAttribute("id", "liSignin");
-    liSignin.setAttribute("class", "nav-item");
-    aSignin.setAttribute("href", "signin.html");
-    aSignin.setAttribute("class", "nav-link");
-    aSignin.innerHTML = "Regístrate";
-    liSignin.appendChild(aSignin);
+    let aSignin = $("<a></a>").attr({"href": "signin.html", "class": "nav-link"});
+    aSignin.text("Regístrate");
+    liSignin = $("<li></li>").attr({"id": "liSignin", "class": "nav-item"});
+    liSignin.append(aSignin);
 }
 
 function createLoginElement() {
-    let aLogin = document.createElement("a");
-    liLogin = document.createElement("li");
-    liLogin.setAttribute("id", "liLogin");
-    liLogin.setAttribute("class", "nav-item");
-    aLogin.setAttribute("href", "login.html");
-    aLogin.setAttribute("class", "nav-link");
-    aLogin.innerHTML = "Iniciar sesión";
-    liLogin.appendChild(aLogin);
+    let aLogin = $("<a></a>").attr({"href": "login.html", "class": "nav-link"});
+    aLogin.text("Iniciar sesión");
+    liLogin = $("<li></li>").attr({"id": "liLogin", "class": "nav-item"});
+    liLogin.append(aLogin);
 }
 
 function createLogoutElement() {
-    let aLogout = document.createElement("a");
-    liLogout = document.createElement("li");
-    liLogout.setAttribute("id", "liLogout");
-    liLogout.setAttribute("class", "nav-item");
-    aLogout.setAttribute("id", "aLogout");
-    aLogout.setAttribute("onclick", "javascript:logout()");
-    aLogout.setAttribute("class", "nav-link");
-    aLogout.innerHTML = "Cerrar sesión";
-    liLogout.appendChild(aLogout);
+    let aLogout = $("<a></a>").attr({"id": "aLogout", "onclick": "javascript:logout()", "class": "nav-link"});
+    aLogout.text("Cerrar sesión");
+    liLogout = $("<li></li>").attr({"id": "liLogout", "class": "nav-item"});
+    liLogout.append(aLogout);
 }
 
 function logout() {
@@ -53,8 +40,7 @@ function setNavbarRole() {
     if (sessionStorage.getItem("token") !== null) {
         $("#ulSession").append(liLogout);
     } else {
-        $("#ulSession").append(liSignin);
-        $("#ulSession").append(liLogin);
+        $("#ulSession").append(liSignin, liLogin);
     }
 }
 
