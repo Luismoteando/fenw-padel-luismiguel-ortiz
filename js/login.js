@@ -25,5 +25,6 @@ function manageResponse() {
         let warning = $("#warning");
         warning.css({"background-color": "#802727"});
         warning.html("Usuario y/o contraseña erróneos.");
+        warning.css({"opacity": "100"});
     }
 }
