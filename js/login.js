@@ -1,4 +1,4 @@
-$().ready(function () {
+$(function () {
     $("#login").click(function () {
         let user = $("#user").val();
         let password = $("#password").val();

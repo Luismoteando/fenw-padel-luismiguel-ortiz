@@ -1,6 +1,6 @@
 var liSignin, liLogin, liLogout;
 
-$().ready(function () {
+$(function () {
     createSigninElement();
     createLoginElement();
     createLogoutElement();
