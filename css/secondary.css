@@ -72,10 +72,12 @@ html {
 }
 
 .div_warning {
-    height: 30px;
     width: 100%;
-    color: whitesmoke;
-    font-size: 15px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
     text-align: center;
+    color: whitesmoke;
     opacity: 0;
+    border-radius: 0.25rem;
 }

@@ -8,20 +8,17 @@ $().ready(function () {
 });
 
 function sendRequest(url) {
-    $.ajax({
-        type: 'GET',
-        url: url,
-        success: function (response) {
-            sessionStorage.setItem('token', response);
+    $.ajax({type: 'GET', url: url})
+        .done(function (data, status, xhr) {
+            let token = xhr.getResponseHeader('Authorization');
+            sessionStorage.setItem('token', token);
             window.location = "index.html";
-        },
-        error: function (response) {
-            if (response.status === 401) {
+        })
+        .fail(function (xhr, status, err) {
+            if (xhr.status === 401) {
                 let warning = $("#warning");
-                warning.css({"background-color": "#802727"});
-                warning.html("Usuario y/o contraseña erróneos.");
-                warning.css({"opacity": "100"});
+                warning.text("Usuario y/o contraseña erróneos.");
+                warning.css({"background-color": "#802727", "opacity": "100"});
             }
-        },
-    });
+        });
 }
