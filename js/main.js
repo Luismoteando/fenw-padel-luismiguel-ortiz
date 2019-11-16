@@ -4,7 +4,7 @@ $(function () {
     createSigninElement();
     createLoginElement();
     createLogoutElement();
-    $("#main-navbar").load("main-navbar.html", function () {
+    $("#navbar").load("main-navbar.html", function () {
         setNavbarRole();
         setNavbarStyle();
     });

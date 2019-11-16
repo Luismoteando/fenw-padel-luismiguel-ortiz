@@ -1,8 +1,9 @@
-body,
-html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+body {
+    padding-top: 4rem;
+}
+
+.h-85vh {
+    height: 85vh !important;
 }
 
 .user_card {

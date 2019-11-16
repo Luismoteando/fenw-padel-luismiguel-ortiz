@@ -4,7 +4,6 @@
     <title>Iniciar sesión - Pádel UPM</title>
     <meta charset="utf-8">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/sticky-footer.css" rel="stylesheet">
     <link href="css/global.css" rel="stylesheet">
     <link href="css/secondary.css" rel="stylesheet">
     <link href="fontawesome/css/all.css" rel="stylesheet">
@@ -15,53 +14,47 @@
     <script src="js/login.js"></script>
 </head>
 <body>
-<div id="secondary-navbar"></div>
+<div id="navbar"></div>
 
-<div class="container h-100">
-    <div class="d-flex justify-content-center h-100">
-        <div class="user_card">
-            <div class="d-flex justify-content-center">
-                <div class="brand_logo_container">
-                    <img alt="Logo" class="brand_logo" src="img/brand_upm.png">
+<div class="d-flex justify-content-center h-85vh">
+    <div class="user_card">
+        <div class="d-flex justify-content-center">
+            <div class="brand_logo_container">
+                <img alt="Logo" class="brand_logo" src="img/brand_upm.png">
+            </div>
+        </div>
+        <div class="d-flex justify-content-center form_container">
+            <form>
+                <div class="input-group mb-3">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                    </div>
+                    <input class="form-control input_user" id="user" name="" placeholder="Usuario" type="text"
+                           value="">
                 </div>
-            </div>
-            <div class="d-flex justify-content-center form_container">
-                <form>
-                    <div class="input-group mb-3">
-                        <div class="input-group-append">
-                            <span class="input-group-text"><i class="fas fa-user"></i></span>
-                        </div>
-                        <input class="form-control input_user" id="user" name="" placeholder="Usuario" type="text"
-                               value="">
+                <div class="input-group mb-3">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="fas fa-key"></i></span>
                     </div>
-                    <div class="input-group mb-3">
-                        <div class="input-group-append">
-                            <span class="input-group-text"><i class="fas fa-key"></i></span>
-                        </div>
-                        <input class="form-control input_pass" id="password" name="" placeholder="Contraseña"
-                               type="password"
-                               value="">
-                    </div>
-                    <div class="div_warning fade" id="warning"></div>
-                    <div class="d-flex justify-content-center mt-3 login_container">
-                        <button class="btn login_btn" id="login" name="button" type="button">Iniciar sesión</button>
-                    </div>
-                </form>
-            </div>
+                    <input class="form-control input_pass" id="password" name="" placeholder="Contraseña"
+                           type="password"
+                           value="">
+                </div>
+                <div class="div_warning fade" id="warning"></div>
+                <div class="d-flex justify-content-center mt-3 login_container">
+                    <button class="btn login_btn" id="login" name="button" type="button">Iniciar sesión</button>
+                </div>
+            </form>
+        </div>
 
-            <div class="mt-4">
-                <div class="d-flex justify-content-center links">
-                    ¿No tienes cuenta?<a class="ml-2" href="signin.html">Regístrate</a>
-                </div>
+        <div class="mt-4">
+            <div class="d-flex justify-content-center links">
+                ¿No tienes cuenta?<a class="ml-2" href="signin.html">Regístrate</a>
             </div>
         </div>
     </div>
 </div>
 
-<footer class="footer">
-    <div class="container text-center">
-        <span class="text-muted">Copyright © 2019 Luis Miguel Ortiz Rozalén. All Rights Reserved.</span>
-    </div>
-</footer>
+<div id="footer"></div>
 </body>
 </html>
