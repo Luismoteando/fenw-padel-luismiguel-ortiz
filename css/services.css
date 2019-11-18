@@ -3,12 +3,12 @@
     -moz-column-count: 3;
     column-count: 3;
     -webkit-column-gap: 1em;
-    -moz-column-gap: 1em;
-    column-gap: 1em;
-    -moz-column-gap: 1.5em;
-    -webkit-column-gap: 1.5em;
     column-gap: 1.5em;
     font-size: .85em;
+}
+
+.masonry {
+    -moz-column-gap: 1.5em;
 }
 
 .item1 {

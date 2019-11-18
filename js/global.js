@@ -10,5 +10,4 @@ function setNavbarScrolling() {
             $("#navIndex").removeClass("bg-dark shadow").addClass("bg-transparent");
         }
     });
-    $("#footer").load("footer.html");
 }
